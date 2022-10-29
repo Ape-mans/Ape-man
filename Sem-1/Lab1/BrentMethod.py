@@ -2,11 +2,33 @@ import math
 
 
 class Brent:
+    """Class was made to implement Brent method of function minimization"""
     def __init__(self, func):
+        """
+        Constructor of Brent method
+
+            func: function(x: float) : float
+        """
         self._func = func
 
     @staticmethod
     def _top_of_parabola(x, w, v, fx, fw, fv):
+        """
+        Finding top of parabola
+
+            variables:
+                x: float
+                w: float
+                v: float
+
+            func value to exact variable:
+                fx: float
+                fw: float
+                fv: float
+
+        Return:
+            vertex of parabola from 3 points
+        """
         denominator = 2 * ((w - x) * (fw - fv) - (w - v) * (fw - fx))
         if denominator == 0:
             return None
@@ -14,6 +36,21 @@ class Brent:
 
     @staticmethod
     def do_method(func, left, right, e):
+        """
+        Static calling of method function
+
+            func: function(x: float) : float
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         r = (3 - 5 ** 0.5) / 2
         x = w = v = left + r * (right - left)
         fx = func(x)
@@ -65,6 +102,19 @@ class Brent:
         return x, i, right - left
 
     def do(self, left, right, e):
+        """
+        Calling method function from class instance
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         return Brent.do_method(self._func, left, right, e)
 
 

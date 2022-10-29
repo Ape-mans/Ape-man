@@ -2,11 +2,32 @@ import math
 
 
 class GoldenRatio:
+    """Class was made to implement Golden Ratio method of function minimization"""
     def __init__(self, func):
+        """
+        Constructor of Golden Ratio method
+
+            func: function(x: float) : float
+        """
         self._func = func
 
     @staticmethod
     def do_method(func, left, right, e):
+        """
+        Static calling of method function
+
+            func: function(x: float) : float
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         i = 0
         phi = (1 + 5**0.5) / 2
         resphi = 2 - phi
@@ -31,6 +52,19 @@ class GoldenRatio:
         return (x1 + x2) / 2, i, right - left
 
     def do(self, left, right, e):
+        """
+        Calling method function from class instance
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         return GoldenRatio.do_method(self._func, left, right, e)
 
 

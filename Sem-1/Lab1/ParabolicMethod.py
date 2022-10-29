@@ -2,12 +2,34 @@ import math
 
 
 class Parabolic:
+    """Class was made to implement Parabolic method of function minimization"""
     def __init__(self, func):
+        """
+        Constructor of Parabolic method
+
+            func: function(x: float) : float
+        """
         self._func = func
 
 
     @staticmethod
     def _top_of_parabola(m, l, r, fm, fl, fr):
+        """
+        Finding top of parabola
+
+            variables:
+                m: float
+                l: float
+                r: float
+
+            func value to exact variable:
+                fm: float
+                fl: float
+                fr: float
+
+        Return:
+            vertex of parabola from 3 points
+        """
         denominator = 2 * ((m - l) * (fm - fr) - (m - r) * (fm - fl))
         if denominator == 0:
             return None
@@ -16,6 +38,21 @@ class Parabolic:
 
     @staticmethod
     def do_method(func, left, right, e):
+        """
+        Static calling of method function
+
+            func: function(x: float) : float
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         i = 0
         middle = (left + right) / 2
         fl = func(left)
@@ -47,6 +84,19 @@ class Parabolic:
         return u, i, right - left
 
     def do(self, left, right, e):
+        """
+        Calling method function from class instance
+
+            Accuracy error:
+                e: float
+
+            Search boundaries:
+                left: float
+                right: float
+
+        Return:
+            minimum point of function, count of iteration, distance between right and left border
+        """
         return Parabolic.do_method(self._func, left, right, e)
 
 
