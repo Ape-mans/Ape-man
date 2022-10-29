@@ -3,8 +3,10 @@ import numpy as np
 from Lab3.LUDecomposition import LUDecomposition
 from Lab3.SolveLU import SolveLU
 
-
+"""Get reversed matrix A from L and U matrixes"""
 class ReversedMatrixByLU:
+    """We use LU-Decompostion to find reversed matrix A
+    For more info check LU Decompostion file"""
     @staticmethod
     def get_reversed(L, U):
         n = L.shape[0]
@@ -21,6 +23,7 @@ class ReversedMatrixByLU:
 
         return np.matrix(reversedMatrix)
 
+    """Get Identity Matrix"""
     @staticmethod
     def _get_identity_matrix(n):
         e = np.zeros((n, n))

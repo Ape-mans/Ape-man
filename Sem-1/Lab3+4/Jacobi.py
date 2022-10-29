@@ -1,6 +1,19 @@
+"""Jacobi's method for solving systems of linear algebraic equations"""
+
+
 class Jacobi:
+
+    """The order of solving SLOUGH by the Jacobi method is as follows:
+    ● Reduction of the system of equations to a form in which
+    some unknown value of the system is expressed on each line.
+    ● Arbitrary choice of the null solution, as it can be taken
+    a vector column of free terms.
+    ● We substitute an arbitrary zero solution into the system
+    of equations obtained by subparagraph 1.
+    ● Implementation of additional iterations, for each of which
+    the solution obtained at the previous stage is used"""
     @staticmethod
-    def solve(matrix, values, accuracy = 1e-3, maxCountOfIterations = 1000):
+    def solve(matrix, values, accuracy=1e-3, maxCountOfIterations=1000):
         n = len(values)
         x = [1 for _ in range(n)]
 
@@ -17,6 +30,9 @@ class Jacobi:
                 break
 
         return x
+
+    """If the relation less than our accuracy then we found closest answer
+    There is no need to proceed calculations"""
 
     @staticmethod
     def _isNeedToEnd(x_prev, x, accuracy):
