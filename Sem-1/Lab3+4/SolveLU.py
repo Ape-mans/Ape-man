@@ -1,6 +1,6 @@
 import numpy as np
 
-
+"""Find solution for systems of linear algebraic equations using LU-decomposition"""
 class SolveLU:
     @staticmethod
     def solve_LU(L, U, b):
