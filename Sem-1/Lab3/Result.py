@@ -1,13 +1,7 @@
 import pprint
-import time
-
-import numpy as np
-from scipy.sparse import csr_matrix
 
 from LUDecomposition import LUDecomposition
-from Lab3.HilbertSolution import HilbertSolution
 from Lab3.ReversedMatrixByLU import ReversedMatrixByLU
-from SolveLU import SolveLU
 
 # A3 = [[1, 0, 3], [10, 4, 0], [3, 5, 4]]
 # print("A 3x3:")
