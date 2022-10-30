@@ -1,0 +1,372 @@
+Help on module ConjugateGradient:
+
+NAME
+    ConjugateGradient
+
+CLASSES
+    builtins.object
+        ConjugateGradient
+
+    class ConjugateGradient(builtins.object)
+     |  Class was made to implement ConjugateGradient method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func, step)
+     |      Constructor of Conjugate Gradient method
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Chooser of the next step:
+     |              step: Step Chooser Instance
+     |
+     |  do(self, e, start_point)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Start point:
+     |              start_point: (float, float)
+     |
+     |      Return:
+     |          count of iteration, end point, list of between points
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_descent(func, step, e, start_point)
+     |      Static calling of descent function
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Chooser of the next step:
+     |              step: Step Chooser Instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Start point:
+     |              start_point: (float, float)
+     |
+     |      Return:
+     |          count of iteration, end point, list of between points
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\conjugategradient.py
+
+
+Help on module GradientDescent:
+
+NAME
+    GradientDescent
+
+CLASSES
+    builtins.object
+        GradientDescent
+
+    class GradientDescent(builtins.object)
+     |  Class was made to implement Gradient Descent method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func, step)
+     |      Constructor of Gradient Descent method
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Chooser of the next step:
+     |              step: Step Chooser Instance
+     |
+     |  do(self, e, start_point)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Start point:
+     |              start_point: (float, float)
+     |
+     |      Return:
+     |          count of iteration, end point, list of between points
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_descent(func, step, e, start_point)
+     |      Static calling of descent function
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Chooser of the next step:
+     |              step: Step Chooser Instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Start point:
+     |              start_point: (float, float)
+     |
+     |      Return:
+     |          count of iteration, end point, list of between points
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\gradientdescent.py
+
+
+Help on module LengthCounter:
+
+NAME
+    LengthCounter
+
+CLASSES
+    builtins.object
+        LengthCounter
+
+    class LengthCounter(builtins.object)
+     |  Class was made to get length of vector
+     |
+     |  Static methods defined here:
+     |
+     |  get(vector)
+     |      Get length of vector
+     |
+     |      vector: (float, ..., float)
+     |
+     |  get_norm(vector)
+     |      Get squared length of vector
+     |
+     |      vector: (float, ..., float)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\lengthcounter.py
+
+
+Help on module StepConst:
+
+NAME
+    StepConst
+
+CLASSES
+    builtins.object
+        StepConst
+
+    class StepConst(builtins.object)
+     |  Class was made to implement making Constant Step Chooser variant
+     |
+     |  Methods defined here:
+     |
+     |  init(self, step)
+     |      Constructor of next step chooser
+     |
+     |      start step:
+     |          step: float
+     |
+     |  get_step(self, func, point, grad, e)
+     |      Func to get next step
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Current point:
+     |              point: (float, float)
+     |
+     |          Current gradient:
+     |              grad: (float, float)
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |      Return:
+     |          next step
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\stepconst.py
+
+
+Help on module StepSplit:
+
+NAME
+    StepSplit
+
+CLASSES
+    builtins.object
+        StepSplit
+
+    class StepSplit(builtins.object)
+     |  Class was made to implement making Split Step Chooser variant
+     |
+     |  Methods defined here:
+     |
+     |  init(self, step, gamma)
+     |      Constructor of next step chooser
+     |
+     |      start step:
+     |          step: float
+     |
+     |      reducing gamma:
+     |          gamma: float (0, 1)
+     |
+     |  get_step(self, func, point, grad, e)
+     |      Func to get next step
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Current point:
+     |              point: (float, float)
+     |
+     |          Current gradient:
+     |              grad: (float, float)
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |      Return:
+     |          next step
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\stepsplit.py
+
+
+Help on module StepFibonacci:
+
+NAME
+    StepFibonacci
+
+CLASSES
+    builtins.object
+        StepFibonacci
+
+    class StepFibonacci(builtins.object)
+     |  Class was made to implement making Fibonacci Step Chooser variant
+     |
+     |  Methods defined here:
+     |
+     |  init(self, step)
+     |      Constructor of next step chooser
+     |
+     |      start step:
+     |          step: float
+     |
+     |  get_step(self, func, point, grad, e)
+     |      Func to get next step
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Current point:
+     |              point: (float, float)
+     |
+     |          Current gradient:
+     |              grad: (float, float)
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |      Return:
+     |          next step
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\stepfibonacci.py
+
+
+Help on module StepGoldenRatio:
+
+NAME
+    StepGoldenRatio
+
+CLASSES
+    builtins.object
+        StepGoldenRatio
+
+    class StepGoldenRatio(builtins.object)
+     |  Class was made to implement making Golden Ratio Step Chooser variant
+     |
+     |  Methods defined here:
+     |
+     |  init(self, step)
+     |      Constructor of next step chooser
+     |
+     |      start step:
+     |          step: float
+     |
+     |  get_step(self, func, point, grad, e)
+     |      Func to get next step
+     |
+     |          func: function(point: (float, float)) : float
+     |
+     |          Current point:
+     |              point: (float, float)
+     |
+     |          Current gradient:
+     |              grad: (float, float)
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |      Return:
+     |          next step
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab2\stepgoldenratio.py

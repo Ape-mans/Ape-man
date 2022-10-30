@@ -1,0 +1,313 @@
+Help on module BrentMethod:
+
+NAME
+    BrentMethod
+
+CLASSES
+    builtins.object
+        Brent
+
+    class Brent(builtins.object)
+     |  Class was made to implement Brent method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func)
+     |      Constructor of Brent method
+     |
+     |          func: function(x: float) : float
+     |
+     |  do(self, left, right, e)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_method(func, left, right, e)
+     |      Static calling of method function
+     |
+     |          func: function(x: float) : float
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab1\brentmethod.py
+
+
+Help on module DichotomyMethod:
+
+NAME
+    DichotomyMethod
+
+CLASSES
+    builtins.object
+        Dichotomy
+
+    class Dichotomy(builtins.object)
+     |  Class was made to implement Dichotomy method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func)
+     |      Constructor of Dichotomy method
+     |
+     |          func: function(x: float) : float
+     |
+     |  do(self, left, right, e)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_method(func, left, right, e)
+     |      Static calling of method function
+     |
+     |          func: function(x: float) : float
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab1\dichotomymethod.py
+
+
+Help on module FibonacciMethod:
+
+NAME
+    FibonacciMethod
+
+CLASSES
+    builtins.object
+        Fibonacci
+
+    class Fibonacci(builtins.object)
+     |  Class was made to implement Fibonacci method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func)
+     |      Constructor of Fibonacci method
+     |
+     |          func: function(x: float) : float
+     |
+     |  do(self, left, right, e)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_method(func, left, right, e)
+     |      Static calling of method function
+     |
+     |          func: function(x: float) : float
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab1\fibonaccimethod.py
+
+
+Help on module GoldenRatioMethod:
+
+NAME
+    GoldenRatioMethod
+
+CLASSES
+    builtins.object
+        GoldenRatio
+
+    class GoldenRatio(builtins.object)
+     |  Class was made to implement Golden Ratio method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func)
+     |      Constructor of Golden Ratio method
+     |
+     |          func: function(x: float) : float
+     |
+     |  do(self, left, right, e)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_method(func, left, right, e)
+     |      Static calling of method function
+     |
+     |          func: function(x: float) : float
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab1\goldenratiomethod.py
+
+
+Help on module ParabolicMethod:
+
+NAME
+    ParabolicMethod
+
+CLASSES
+    builtins.object
+        Parabolic
+
+    class Parabolic(builtins.object)
+     |  Class was made to implement Parabolic method of function minimization
+     |
+     |  Methods defined here:
+     |
+     |  init(self, func)
+     |      Constructor of Parabolic method
+     |
+     |          func: function(x: float) : float
+     |
+     |  do(self, left, right, e)
+     |      Calling method function from class instance
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Static methods defined here:
+     |
+     |  do_method(func, left, right, e)
+     |      Static calling of method function
+     |
+     |          func: function(x: float) : float
+     |
+     |          Accuracy error:
+     |              e: float
+     |
+     |          Search boundaries:
+     |              left: float
+     |              right: float
+     |
+     |      Return:
+     |          minimum point of function, count of iteration, distance between right and left border
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab1\parabolicmethod.py

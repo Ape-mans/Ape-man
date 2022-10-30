@@ -1,0 +1,148 @@
+Help on module HilbertSolution:
+
+NAME
+    HilbertSolution
+
+CLASSES
+    builtins.object
+        HilbertSolution
+
+    class HilbertSolution(builtins.object)
+     |  Static methods defined here:
+     |
+     |  hilbert(n)
+     |
+     |  solve_LU(n)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab3+4\hilbertsolution.py
+
+
+Help on module Jacobi:
+
+NAME
+    Jacobi - Jacobi's method for solving systems of linear algebraic equations
+
+CLASSES
+    builtins.object
+        Jacobi
+
+    class Jacobi(builtins.object)
+     |  The order of solving SLOUGH by the Jacobi method is as follows:
+     |  ● Reduction of the system of equations to a form in which
+     |  some unknown value of the system is expressed on each line.
+     |  ● Arbitrary choice of the null solution, as it can be taken
+     |  a vector column of free terms.
+     |  ● We substitute an arbitrary zero solution into the system
+     |  of equations obtained by subparagraph 1.
+     |  ● Implementation of additional iterations, for each of which
+     |  the solution obtained at the previous stage is used
+     |
+     |  Static methods defined here:
+     |
+     |  solve(matrix, values, accuracy=0.001, maxCountOfIterations=1000)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab3+4\jacobi.py
+
+
+Help on module LUDecomposition:
+
+NAME
+    LUDecomposition
+
+CLASSES
+    builtins.object
+        LUDecomposition
+
+    class LUDecomposition(builtins.object)
+     |  Static methods defined here:
+     |
+     |  decompose_to_LU(A)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab3+4\ludecomposition.py
+
+
+Help on module ReversedMatrixByLU:
+
+NAME
+    ReversedMatrixByLU
+
+CLASSES
+    builtins.object
+        ReversedMatrixByLU
+
+    class ReversedMatrixByLU(builtins.object)
+     |  We use LU-Decompostion to find reversed matrix A
+     |  For more info check LU Decompostion file
+     |
+     |  Static methods defined here:
+     |
+     |  get_reversed(L, U)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab3+4\reversedmatrixbylu.py
+
+
+Help on module SolveLU:
+
+NAME
+    SolveLU
+
+CLASSES
+    builtins.object
+        SolveLU
+
+    class SolveLU(builtins.object)
+     |  Static methods defined here:
+     |
+     |  solve_LU(L, U, b)
+     |
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |
+     |  dict
+     |      dictionary for instance variables (if defined)
+     |
+     |  weakref
+     |      list of weak references to the object (if defined)
+
+FILE
+    c:\users\crazy\pycharmprojects\ape-man\sem-1\lab3+4\solvelu.py
