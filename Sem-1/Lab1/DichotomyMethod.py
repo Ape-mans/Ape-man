@@ -1,7 +1,3 @@
-import math
-import matplotlib.pyplot as plt
-
-
 class Dichotomy:
     def __init__(self, func):
         self._func = func

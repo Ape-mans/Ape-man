@@ -1,5 +1,6 @@
-from LengthCounter import LengthCounter
 import numpy as np
+
+from LengthCounter import LengthCounter
 
 
 class ConjugateGradient:
