@@ -1,6 +1,3 @@
-import math
-
-
 class Brent:
     def __init__(self, func):
         self._func = func

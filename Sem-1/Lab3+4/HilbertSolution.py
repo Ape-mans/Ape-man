@@ -1,7 +1,7 @@
 import numpy as np
 
-from Lab3.LUDecomposition import LUDecomposition
-from Lab3.SolveLU import SolveLU
+from LUDecomposition import LUDecomposition
+from SolveLU import SolveLU
 
 
 class HilbertSolution:
