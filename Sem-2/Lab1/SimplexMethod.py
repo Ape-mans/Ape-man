@@ -85,7 +85,6 @@ class SimplexMethod:
                 self.basis[basisIndex] += 1
             return self.basis[basisIndex]
 
-
         def solve(self):
             self.basis = self._getDefaultBasis()
             while True:
@@ -128,9 +127,6 @@ class SimplexMethod:
                 self.additionalVariableNumber = additionalVariableNumber
             else:
                 self.hasVariable = False
-
-        def addVariable(self):
-            self.coefs.append(0)
 
         def updateForVariables(self, variables):
             for v in range(len(variables)):
