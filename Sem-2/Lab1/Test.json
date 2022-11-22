@@ -1,33 +1,117 @@
 {
-  "Goal" : {
-    "Case" : "Min",
-    "Coefs" : [
-      -1,
-      -2,
-      -3,
-      1
-    ]
-  },
-  "Restrictions" : [
+  "Tests": [
     {
-      "Case" : "Equal",
-      "Coefs" : [
-        1,
-        -3,
-        -1,
-        -2
-      ],
-      "Answer" : -4
+      "Goal": {
+        "Case": "Min",
+        "Coefs": [
+          -1,
+          -2,
+          -3,
+          1
+        ]
+      },
+      "Restrictions": [
+        {
+          "Case": "Equal",
+          "Coefs": [
+            1,
+            -3,
+            -1,
+            -2
+          ],
+          "Answer": -4
+        },
+        {
+          "Case": "Equal",
+          "Coefs": [
+            1,
+            -1,
+            1,
+            0
+          ],
+          "Answer": 0
+        }
+      ]
     },
-    {
-      "Case" : "Equal",
-      "Coefs" : [
-        1,
-        -1,
-        1,
-        0
-      ],
-      "Answer" : 0
+        {
+      "Goal": {
+        "Case": "Min",
+        "Coefs": [
+          -1,
+          -2,
+          -1,
+          3,
+          -1
+        ]
+      },
+      "Restrictions": [
+        {
+          "Case": "Equal",
+          "Coefs": [
+            1,
+            1,
+            0,
+            2,
+            1
+          ],
+          "Answer": 5
+        },
+        {
+          "Case": "Equal",
+          "Coefs": [
+            1,
+            1,
+            1,
+            3,
+            2
+          ],
+          "Answer": 9
+        },
+        {
+          "Case": "Equal",
+          "Coefs": [
+            0,
+            1,
+            1,
+            2,
+            1
+          ],
+          "Answer": 6
+        }
+      ]
+    },
+        {
+      "Goal": {
+        "Case": "Min",
+        "Coefs": [
+          -1,
+          5,
+          1,
+          -1
+        ]
+      },
+      "Restrictions": [
+        {
+          "Case": "Less",
+          "Coefs": [
+            1,
+            3,
+            3,
+            1
+          ],
+          "Answer": 3
+        },
+        {
+          "Case": "Less",
+          "Coefs": [
+            2,
+            0,
+            3,
+            -1
+          ],
+          "Answer": 4
+        }
+      ]
     }
   ]
 }
